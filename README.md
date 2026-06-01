@@ -17,6 +17,8 @@ Built with **C++**, **Qt 6**, and the **Windows Core Audio** API (WASAPI).
 - Optional run at Windows startup (current user, `HKCU\Run\MicVolumeFixGui`)
 - Import and export settings as JSON
 
+<img width="529" height="642" alt="Preview" src="https://github.com/user-attachments/assets/27c1672e-7554-4ecf-b541-12b23c41d78a" />
+
 
 ## Requirements
 
