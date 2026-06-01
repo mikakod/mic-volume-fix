@@ -1,0 +1,18 @@
+{
+  "comment": "Copy/rename -> config.json beside MicVolumeFix.exe or cwd.",
+
+  "device_id_contains": "",
+  "device_id_exact": "",
+  "use_default_capture": true,
+
+  "target_volume_percent": 100,
+  "target_mute": false,
+
+  "poll_interval_ms": 50,
+  "volume_match_epsilon": 0.01,
+
+  "log_level": "INFO",
+  "log_file": "",
+
+  "tray_icon": false
+}

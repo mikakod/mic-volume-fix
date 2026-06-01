@@ -1,69 +1,96 @@
-# Prerequisites
-*.d
+# =============================================================================
+# Mic Volume Fix — source repo only (no binaries, build trees, or local files)
+# =============================================================================
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# --- Build & release outputs ---
+/build/
+/dist/
+/out/
+/_deps/
 
-# Precompiled Headers
-*.gch
+# --- CMake (including accidental in-tree configure) ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+CMakeUserPresets.json
+Makefile
+*.ninja
+*.ninja_deps
+*.ninja_log
+
+# --- MSVC / Visual Studio ---
+.vs/
+*.sln
+*.slnx
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.user
+*.userosscache
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+ipch/
+x64/
+[Dd]ebug/
+[Rr]elease/
+[Rr]elWithDebInfo/
+[Mm]inSizeRel/
+*.tlog/
+*.lastbuildstate
+*.recipe
+*.idb
 *.pch
 
-# Linker files
-*.ilk
-
-# Debugger Files
+# --- Compiled / linked artifacts ---
+*.obj
+*.o
+*.iobj
+*.ipdb
 *.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+*.ilk
+*.exp
 *.lib
-
-# Executables
+*.a
+*.dll
 *.exe
 *.out
 *.app
+*.zip
 
-# Build directories
-build/
-Build/
-build-*/
+# --- Qt / MOC / UIC / RCC generated ---
+*_autogen/
+moc_*.cpp
+mocs_compilation*.cpp
+qrc_*.cpp
+ui_*.h
+*.qm
 
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
-
-# Temporary files
-*.tmp
-*.log
-*.bak
+# --- IDE / editors ---
+.vscode/
+.idea/
 *.swp
+*~
 
-# vcpkg
-vcpkg_installed/
+# --- OS junk ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
 
-# debug information files
-*.dwo
+# --- Logs & local scratch ---
+*.log
+release-log.txt
+build-report.txt
 
-# test output & cache
-Testing/
-.cache/
+# --- Local-only (keep on disk, do not publish) ---
+/scripts/qt-path.bat
+/scripts/verify-native.bat
+
+# --- User / machine config ---
+config.json

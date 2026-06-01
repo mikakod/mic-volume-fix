@@ -1,0 +1,5 @@
+@echo off
+REM Copy to scripts/qt-path.bat and set your Qt MSVC kit path.
+REM Must contain: lib\cmake\Qt6\Qt6Config.cmake
+
+set "CMAKE_PREFIX_PATH=C:\Qt\6.11.1\msvc2022_64"
